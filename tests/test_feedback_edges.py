@@ -19,5 +19,4 @@ def test_feedback_for_very_short_low_comment():
         signals={"length": 1, "intent_hits": 0, "redundancy": 0.1},
     )
     msg = suggestion_from(score).lower()
-    # Whatever wording you used, check for the key idea:
     assert "expand the comment" in msg or "too short" in msg

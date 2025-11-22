@@ -12,7 +12,7 @@ class DummySpan:
 
 
 def test_predict_quality_handles_empty_tokens():
-    # No comment tokens and empty code context → jaccard or similar edge
+    # No comment tokens and empty code context jaccard
     span = DummySpan()
     prepared = PreparedComment(span=span, tokens=[], code_context="")
     q = predict_quality(prepared)

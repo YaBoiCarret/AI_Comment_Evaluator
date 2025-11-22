@@ -43,6 +43,5 @@ def test_semantic_redundancy_for_increment_zero():
     redundancy = quality.signals["redundancy"]
     assert redundancy >= 0.5, f"Expected high redundancy, got {redundancy}"
 
-    # We still expect a valid label and score in [0, 1]
     assert quality.label in {"High", "Medium", "Low"}
     assert 0.0 <= quality.score <= 1.0
