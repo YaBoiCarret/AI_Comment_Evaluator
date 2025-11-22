@@ -1,4 +1,3 @@
-
 """Load and cache the configuration so repeated reads are avoided.
 This reduces file system overhead and ensures consistent settings during a run."""
 
