@@ -27,6 +27,6 @@ def test_cli_on_samples():
     # And at least one better-than-low comment (Medium or High) from the good example
     assert any(l in {"Medium", "High"} for l in labels), "Expected at least one Medium/High label in samples"
 
-# Optionally, also verify that the summary block exists
-#summary_present = any(ln.strip() == "Summary:" for ln in lines)
-#assert summary_present, "Expected a Summary block at the end of the report"
+    # Optionally, also verify that the summary block exists
+    summary_present = any(ln.strip() == "Summary:" for ln in lines)
+    assert summary_present, "Expected a Summary block at the end of the report"

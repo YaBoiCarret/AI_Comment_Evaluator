@@ -9,3 +9,7 @@ def risky_divide(a, b):
         # check zero
         return 0
     return a / b
+
+def magic_number() -> int:
+    # returns 42
+    return 42
